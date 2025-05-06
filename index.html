@@ -91,9 +91,9 @@
       <a href="#equip">Equip</a>
     </nav>
     <nav class="language-selector">
-      <a href="#" onclick="setLanguage('ca')">CA</a>
-      <a href="#" onclick="setLanguage('es')">ES</a>
-      <a href="#" onclick="setLanguage('en')">EN</a>
+      <a href="index.html">CA</a>
+      <a href="index_es.html">ES</a>
+      <a href="index_en.html">EN</a>
     </nav>
   </header>
 
@@ -165,17 +165,5 @@
   <footer>
     &copy; 2025 DRI – Desinformació, Resiliència i Infraestructures | Universitat de Barcelona, Heurística
   </footer>
-
-  <script>
-    const translations = {
-      ca: { objectius: "Objectius", metodologia: "Metodologia" },
-      es: { objectius: "Objetivos", metodologia: "Metodología" },
-      en: { objectius: "Objectives", metodologia: "Methodology" }
-    };
-    function setLanguage(lang) {
-      document.querySelector('#objectius h2').textContent = translations[lang].objectius;
-      document.querySelector('#metodologia h2').textContent = translations[lang].metodologia;
-    }
-  </script>
 </body>
 </html>
